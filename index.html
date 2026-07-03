@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind GPS | Le vent dans le dos, toujours.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #0f172a; color: #f8fafc; }
+        .gradient-text { background: linear-gradient(to right, #f97316, #ea580c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-glow { position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(249,115,22,0.15) 0%, rgba(15,23,42,0) 70%); top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1; pointer-events: none; }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <span class="text-2xl font-black tracking-tighter text-white">TAILWIND <span class="text-orange-500">GPS</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-slate-300 hover:text-white font-medium transition-colors">Fonctionnalités</a>
+                    <a href="#pricing" class="text-slate-300 hover:text-white font-medium transition-colors">Tarifs</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="https://app.tailwind-gps.com" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-xl font-bold transition-transform transform hover:scale-105 shadow-lg shadow-orange-500/30">
+                        Ouvrir l'Application
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="hero-glow"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-sm font-bold uppercase tracking-wider mb-8">
+                <span class="flex h-2 w-2 rounded-full bg-orange-500"></span>
+                Web App Officielle Disponible
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black tracking-tighter mb-6 leading-tight">
+                Roulez toujours avec le <br class="hidden md:block"/>
+                <span class="gradient-text">vent dans le dos.</span>
+            </h1>
+            <p class="mt-4 text-xl text-slate-400 max-w-3xl mx-auto font-medium mb-10 leading-relaxed">
+                Le premier algorithme cartographique qui analyse les flux météo en temps réel pour générer votre boucle idéale. Idéal pour vos sorties de récupération, vos blocs d'intensité, ou votre préparation à L'Étape du Tour.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://app.tailwind-gps.com" class="w-full sm:w-auto px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white text-lg font-black rounded-2xl transition-all transform hover:scale-105 shadow-xl shadow-orange-500/20 flex items-center justify-center gap-3">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Démarrer gratuitement
+                </a>
+                <div class="flex gap-4 mt-4 sm:mt-0 opacity-50 cursor-not-allowed">
+                    <div class="px-6 py-4 bg-slate-800 border border-slate-700 rounded-2xl flex items-center gap-2">
+                        <span>🍏</span> <span class="text-sm font-bold">App Store (Bientôt)</span>
+                    </div>
+                    <div class="px-6 py-4 bg-slate-800 border border-slate-700 rounded-2xl flex items-center gap-2">
+                        <span>🤖</span> <span class="text-sm font-bold">Play Store (Bientôt)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="py-24 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black tracking-tighter">L'ingénierie au service du <span class="text-orange-500">cyclisme</span>.</h2>
+                <p class="mt-4 text-slate-400">Plus besoin de deviner vos itinéraires. L'algorithme s'occupe de tout.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Box 1 -->
+                <div class="bg-slate-800/50 p-8 rounded-3xl border border-slate-700 hover:border-orange-500/50 transition-colors">
+                    <div class="w-14 h-14 bg-orange-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">🌪️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Météo Prédictive</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Indiquez votre heure de départ et votre distance. Tailwind croise la topographie avec Open-Meteo pour vous garantir un retour poussé par le vent.
+                    </p>
+                </div>
+                <!-- Box 2 -->
+                <div class="bg-slate-800/50 p-8 rounded-3xl border border-slate-700 hover:border-orange-500/50 transition-colors">
+                    <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">🛡️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Sécurité & Ombre</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Fuyez la circulation. Notre moteur BRouter privilégie les routes secondaires silencieuses et peut orienter votre trace vers les zones forestières.
+                    </p>
+                </div>
+                <!-- Box 3 -->
+                <div class="bg-slate-800/50 p-8 rounded-3xl border border-slate-700 hover:border-orange-500/50 transition-colors">
+                    <div class="w-14 h-14 bg-green-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">📥</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Export Immédiat</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Téléchargez votre fichier GPX en un clic. Il s'ouvre instantanément et sans friction dans Garmin Connect, Wahoo, ou directement sur votre compteur.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black tracking-tighter">Des tarifs simples. <br/>Moins chers qu'une chambre à air.</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Gratuit -->
+                <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700 flex flex-col">
+                    <h3 class="text-2xl font-black text-white mb-2">Découverte</h3>
+                    <div class="text-4xl font-black text-white mb-6">0€ <span class="text-lg text-slate-500 font-medium">/ à vie</span></div>
+                    <ul class="space-y-4 mb-8 flex-1 text-slate-300 text-sm">
+                        <li class="flex items-center gap-3"><span>✓</span> Moteur Météo & Topo inclus</li>
+                        <li class="flex items-center gap-3"><span>✓</span> Accès à la carte mondiale</li>
+                        <li class="flex items-center gap-3 text-white font-bold"><span>✓</span> 1 export GPX par semaine</li>
+                    </ul>
+                    <a href="https://app.tailwind-gps.com" class="w-full py-4 rounded-xl bg-slate-700 text-white font-bold hover:bg-slate-600 transition-colors text-center">Générer une trace</a>
+                </div>
+
+                <!-- Pro -->
+                <div class="bg-gradient-to-br from-slate-800 to-orange-950/30 p-8 rounded-3xl border border-orange-500 relative flex flex-col shadow-2xl shadow-orange-500/10 transform md:-translate-y-4">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                        Le plus populaire
+                    </div>
+                    <h3 class="text-2xl font-black text-white mb-2">Mode Pro</h3>
+                    <div class="text-4xl font-black text-orange-500 mb-1">1,99€ <span class="text-lg text-slate-400 font-medium">/ mois</span></div>
+                    <p class="text-xs text-orange-400 mb-6 font-bold uppercase">Ou 19,99€ par an</p>
+                    <ul class="space-y-4 mb-8 flex-1 text-slate-300 text-sm">
+                        <li class="flex items-center gap-3"><span>✓</span> 30 jours d'essai gratuit</li>
+                        <li class="flex items-center gap-3"><span>✓</span> Ajustement manuel du vent</li>
+                        <li class="flex items-center gap-3 text-white font-bold"><span>✓</span> Téléchargements GPX illimités</li>
+                        <li class="flex items-center gap-3"><span>✓</span> Sans engagement (résiliable en 1 clic)</li>
+                    </ul>
+                    <a href="https://app.tailwind-gps.com" class="w-full py-4 rounded-xl bg-orange-500 text-white font-bold hover:bg-orange-600 transition-colors shadow-lg text-center">Essayer gratuitement</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-slate-400 text-sm">
+                &copy; 2026 Tailwind GPS. Construit pour les coursiers et les passionnés.
+            </div>
+            <div class="flex gap-6 text-sm text-slate-500">
+                <a href="#" class="hover:text-white transition-colors">CGU / CGV</a>
+                <a href="#" class="hover:text-white transition-colors">Confidentialité</a>
+                <a href="mailto:contact@tailwind-gps.com" class="hover:text-white transition-colors">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
